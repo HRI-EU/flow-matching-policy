@@ -2,6 +2,10 @@
 
 ![pipeline](images/overall.png "overall")
 
+<p align="center">
+<img src="images/flow.gif" width="600" height="400"/>
+</p>
+
 [![Static Badge](https://img.shields.io/badge/arXiv-2409.01083-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2409.01083)
 <!--[![License](https://img.shields.io/pypi/l/cobras?style=flat-square)](https://opensource.org/license/bsd-3-clause)-->
 <!--[![Code Style](https://img.shields.io/badge/code_style-black-black?style=flat-square)](https://github.com/psf/black)-->
