@@ -1,0 +1,27 @@
+#pusht
+wheel
+numpy
+pytorch-lightning>=1.7.0,<2.0.0
+torch
+torchvision
+zarr
+diffusers
+tqdm
+gym
+pygame
+pymunk
+shapely
+opencv-python
+scikit-image
+scikit-learn
+scikit-video
+gdown
+
+# flow_pusht
+matplotlib
+ipython
+termcolor
+torchdiffeq
+torchsde
+torchdyn
+torchcfm
