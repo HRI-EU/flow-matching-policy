@@ -15,7 +15,7 @@ generalization performance, significant faster inference than diffusion policy w
 <!--* <video src="https://github.com/user-attachments/assets/633d6756-a3ff-4fde-aace-bbf5fbd58866" width="300" autoplay loop muted>-->
 
 <p align="center">
-<img src="images/flow.gif" width="900" height="280"/>
+<img src="images/flow.gif" width="900" height="270"/>
 </p>
 
 ### Updates
