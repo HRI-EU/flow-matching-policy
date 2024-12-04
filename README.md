@@ -3,7 +3,7 @@
 ![pipeline](images/overall.png "overall")
 
 <p align="center">
-<img src="images/flow.gif" width="600" height="400"/>
+<img src="images/flow.gif" width="800" height="400"/>
 </p>
 
 [![Static Badge](https://img.shields.io/badge/arXiv-2409.01083-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2409.01083)
