@@ -2,10 +2,6 @@
 
 ![pipeline](images/overall.png "overall")
 
-<p align="center">
-<img src="images/flow.gif" width="800" height="400"/>
-</p>
-
 [![Static Badge](https://img.shields.io/badge/arXiv-2409.01083-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2409.01083)
 <!--[![License](https://img.shields.io/pypi/l/cobras?style=flat-square)](https://opensource.org/license/bsd-3-clause)-->
 <!--[![Code Style](https://img.shields.io/badge/code_style-black-black?style=flat-square)](https://github.com/psf/black)-->
@@ -17,6 +13,10 @@ generalization performance, significant faster inference than diffusion policy w
 * Paper page: Affordance-based Robot Manipulation with Flow Matching https://arxiv.org/abs/2409.01083
 * Author: Fan Zhang (fan.zhang@honda-ri.de), Michael Gienger
 <!--* <video src="https://github.com/user-attachments/assets/633d6756-a3ff-4fde-aace-bbf5fbd58866" width="300" autoplay loop muted>-->
+
+<p align="center">
+<img src="images/flow.gif" width="900" height="300"/>
+</p>
 
 ### Updates
 We are in process of integrating flow matching policy into the Hugging Face 🤗 LeRobot PushT task.
