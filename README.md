@@ -45,5 +45,5 @@ Training and evaluation examples of using flow matching on PushT and Franka Kitc
 and Alexander Tong's [TorchCFM](https://github.com/atong01/conditional-flow-matching) repo
 * Please download the PushT demonstration datat from Google Drive (id=1KY1InLurpMvJDRb14L9NlXT_fEsCvVUq&confirm=t) based on from Cheng Chi's 
 [diffusion_policy](https://github.com/real-stanford/diffusion_policy) repo.
-* Please download the Franka Kitchen demonstration data from Cheng Chi's 
+* Please download the Franka Kitchen demonstration data from Nur Muhammad Shafiullah's 
 [Behavior Transformers](https://mahis.life/bet/) repo.
