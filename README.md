@@ -41,9 +41,14 @@ Training and evaluation examples of using flow matching on PushT and Franka Kitc
   * `DfsTulipAgent`: DFS inspired variant that leverages a DAG for keeping track of tasks and suitable tools, can create new tools-->
 
 📝 **Acknowledgements** 
-* The model structure implementation is modified from Cheng Chi's [diffusion_policy](https://github.com/real-stanford/diffusion_policy) repo,
-and Alexander Tong's [TorchCFM](https://github.com/atong01/conditional-flow-matching) repo
+* The model structure implementation is modified from Cheng Chi's [diffusion_policy](https://github.com/real-stanford/diffusion_policy) repo. The code is under external/diffusion_policy (MIT license). Some code that we modified is located under external/models.
+* We use some functions from Alexander Tong's [TorchCFM](https://github.com/atong01/conditional-flow-matching) repo (MIT license). It is installed through pip.
 * Please download the PushT demonstration datat from Google Drive (id=1KY1InLurpMvJDRb14L9NlXT_fEsCvVUq&confirm=t) based on from Cheng Chi's 
-[diffusion_policy](https://github.com/real-stanford/diffusion_policy) repo.
+[diffusion_policy](https://github.com/real-stanford/diffusion_policy) repo. 
 * Please download the Franka Kitchen demonstration data from Nur Muhammad Shafiullah's 
-[Behavior Transformers](https://mahis.life/bet/) repo.
+[Behavior Transformers](https://mahis.life/bet/) repo (MIT license).
+
+
+## License
+
+This project is licensed under the BSD 3-clause license - see the [LICENSE.md](LICENSE.md) file for details
