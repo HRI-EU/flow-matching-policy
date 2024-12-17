@@ -6,7 +6,7 @@
 <!--[![License](https://img.shields.io/pypi/l/cobras?style=flat-square)](https://opensource.org/license/bsd-3-clause)-->
 <!--[![Code Style](https://img.shields.io/badge/code_style-black-black?style=flat-square)](https://github.com/psf/black)-->
 
-A reference implementation for the `robot manipulation with flow matching`. The flow matching policy also leads to marginally better 
+A reference implementation for the `robot manipulation with flow matching`. The flow matching also leads to marginally better 
 generalization performance, prominently faster inference than diffusion policy with DDPM.
 
 * Project page: https://hri-eu.github.io/flow-matching-policy/
@@ -19,7 +19,7 @@ generalization performance, prominently faster inference than diffusion policy w
 </p>
 
 ### Updates
-We are in process of integrating flow matching policy into the Hugging Face 🤗 LeRobot PushT task.
+We are in process of integrating flow matching into the Hugging Face 🤗 LeRobot PushT task.
 
 ## Key components
 🔬 **This repo contains** \

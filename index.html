@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Flow Matching Policy</title>
+		<title>Robot Mmanipulation with Flow Matching</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=1000">
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -22,7 +22,7 @@
 		<meta property="og:url"           content="flow-matching-policy.github.io" />
 		<meta property="og:type"          content="website" />
 		<meta property="og:title"         content="Vision-Language-Affordance-based Robot Manipulation with Flow Matching" />
-		<meta property="og:description"   content="We present a framework for assistive robot manipulation, which focuses on two fundamental challenges: first, efficiently adapting large-scale models to downstream scene affordance understanding tasks, especially in daily living scenarios where gathering multi-task data involving humans requires strenuous effort; second, effectively learning robot trajectories by grounding the visual affordance model. We tackle the first challenge by employing a parameter-efficient prompt tuning method that prepends learnable text prompts to the frozen vision model to predict manipulation affordances in multi-task scenarios. Then we propose to learn robot trajectories guided by affordances in a supervised Flow Matching method. Flow matching represents a robot visuomotor policy as a conditional process of flowing random waypoints to desired robot trajectories. Finally, we introduce a real-world dataset with 10 tasks across Activities of Daily Living to test our framework. Our extensive evaluation highlights that the proposed prompt tuning method for learning manipulation affordance with language prompter achieves competitive performance and even outperforms other finetuning protocols across data scales, while satisfying parameter efficiency. Learning multi-task robot trajectories with flow matching policy also leads to marginally better generalization performance and prominently faster inference than diffusion policy with DDPM. Our framework seamlessly unifies affordance model learning and trajectory generation with flow matching for robot manipulation." />
+		<meta property="og:description"   content="We present a framework for assistive robot manipulation, which focuses on two fundamental challenges: first, efficiently adapting large-scale models to downstream scene affordance understanding tasks, especially in daily living scenarios where gathering multi-task data involving humans requires strenuous effort; second, effectively learning robot trajectories by grounding the visual affordance model. We tackle the first challenge by employing a parameter-efficient prompt tuning method that prepends learnable text prompts to the frozen vision model to predict manipulation affordances in multi-task scenarios. Then we propose to learn robot trajectories guided by affordances in a supervised Flow Matching method. Flow matching represents a robot visuomotor policy as a conditional process of flowing random waypoints to desired robot trajectories. Finally, we introduce a real-world dataset with 10 tasks across Activities of Daily Living to test our framework. Our extensive evaluation highlights that the proposed prompt tuning method for learning manipulation affordance with language prompter achieves competitive performance and even outperforms other finetuning protocols across data scales, while satisfying parameter efficiency. Learning multi-task robot trajectories with flow matching also leads to marginally better generalization performance and prominently faster inference than diffusion policy with DDPM. Our framework seamlessly unifies affordance model learning and trajectory generation with flow matching for robot manipulation." />
 	
 	</head>
 	<body id="top">
@@ -47,7 +47,7 @@
 						</span>
 						
 						<p class="paper-paragraph" align="justify">
-						We present a framework for assistive robot manipulation, which focuses on two fundamental challenges: first, efficiently adapting large-scale models to downstream scene affordance understanding tasks, especially in daily living scenarios where gathering multi-task data involving humans requires strenuous effort; second, effectively learning robot trajectories by grounding the visual affordance model. We tackle the first challenge by employing a parameter-efficient prompt tuning method that prepends learnable text prompts to the frozen vision model to predict manipulation affordances in multi-task scenarios. Then we propose to learn robot trajectories guided by affordances in a supervised Flow Matching method. Flow matching represents a robot visuomotor policy as a conditional process of flowing random waypoints to desired robot trajectories. Finally, we introduce a real-world dataset with 10 tasks across Activities of Daily Living to test our framework. Our extensive evaluation highlights that the proposed prompt tuning method for learning manipulation affordance with language prompter achieves competitive performance and even outperforms other finetuning protocols across data scales, while satisfying parameter efficiency. Learning multi-task robot trajectories with flow matching policy also leads to marginally better generalization performance and prominently faster inference than diffusion policy with DDPM. Our framework seamlessly unifies affordance model learning and trajectory generation with flow matching for robot manipulation.
+						We present a framework for assistive robot manipulation, which focuses on two fundamental challenges: first, efficiently adapting large-scale models to downstream scene affordance understanding tasks, especially in daily living scenarios where gathering multi-task data involving humans requires strenuous effort; second, effectively learning robot trajectories by grounding the visual affordance model. We tackle the first challenge by employing a parameter-efficient prompt tuning method that prepends learnable text prompts to the frozen vision model to predict manipulation affordances in multi-task scenarios. Then we propose to learn robot trajectories guided by affordances in a supervised Flow Matching method. Flow matching represents a robot visuomotor policy as a conditional process of flowing random waypoints to desired robot trajectories. Finally, we introduce a real-world dataset with 10 tasks across Activities of Daily Living to test our framework. Our extensive evaluation highlights that the proposed prompt tuning method for learning manipulation affordance with language prompter achieves competitive performance and even outperforms other finetuning protocols across data scales, while satisfying parameter efficiency. Learning multi-task robot trajectories with flow matching also leads to marginally better generalization performance and prominently faster inference than diffusion policy with DDPM. Our framework seamlessly unifies affordance model learning and trajectory generation with flow matching for robot manipulation.
 						</p>
 
 						<hr style="margin-top: 0em;">
@@ -79,7 +79,7 @@
 									<span class="image fit" style="margin-bottom: 1.5em;">
 										<video autoplay loop muted playsinline style="width: 100%; margin-right: 5%;"><source src="videos/feed.mp4" type="video/mp4"> </video>
 									</span>
-									An example of robot feeding the human with flow matching policy.
+									An example of robot feeding the human with flow matching.
 								</div>
 							</div>
 						</div>
@@ -88,7 +88,7 @@
 						<h3>Real-world Experiments</h3>
 
 						<p>
-						Flow Matching Policy has been tested on 10 tasks across Activities of Daily Living, and leads to consistently better performance than alternative behavior cloning methods. (Videos are 4x speed) 
+						Flow Matching has been tested on 10 tasks across Activities of Daily Living, and leads to consistently better performance than alternative behavior cloning methods. (Videos are 4x speed) 
 						</p>
 						<div class="box alt" style="margin-bottom: 1em;">
 							<div class="row 50% uniform" style="width: 100%;">
@@ -186,7 +186,7 @@
 						Fan Zhang, Michael Gienger<br>
 						<br>
 						Code will be released soon at <a href="https://github.com/HRI-EU/flow-matching-policy">https://github.com/HRI-EU/flow-matching-policy</a>.<br>
-						We are in process of integrating flow matching policy into the Hugging Face 🤗 LeRobot PushT task.
+						We are in process of integrating flow matching into the Hugging Face 🤗 LeRobot PushT task.
 						</p>
 						
 						
