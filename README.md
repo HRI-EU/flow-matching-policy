@@ -15,6 +15,3 @@
 <p align="center">
 <img src="images/flow.gif" width="900" height="270"/>
 </p>
-
-### Updates
-We are in process of integrating flow matching into the Hugging Face 🤗 LeRobot PushT task.
