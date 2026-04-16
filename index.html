@@ -42,23 +42,17 @@
 
 						<h2 style="text-align: center; white-space: nowrap; color: #4e79a7; font-size: 200%"> Affordance-based Robot Manipulation <br> with Flow Matching</h2>
 
-						<span class="figure" style="margin-top: 0.5em; margin-bottom: 0;">
-							<img src="images/overall.png" width="100%" margin-top="0.5em" alt="" />
-						</span>
+<span class="figure" style="margin-top: 0.5em; margin-bottom: 0;">
+    <video style="width: 100%; margin-top: 0.5em;" autoplay loop muted playsinline>
+        <source src="videos/overall.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</span>
 						
 						<p class="paper-paragraph" align="justify">
 						We present a framework for assistive robot manipulation that addresses two fundamental challenges: efficient adaptation of large-scale models for scene affordance understanding and effective learning of robot actions by grounding the visual affordance. To tackle the first challenge, we adopt a parameter-efficient prompt tuning method, prepending learnable text prompts to a frozen vision model to predict affordances, while considering spatial and semantic relationships in multi-task scenarios. For the second challenge, we propose a flow matching method, representing a robot visuomotor policy as a conditional process of flowing random waypoints to desired robot actions. We introduce a real-world dataset with 10 tasks to evaluate our approach. Experiments show our prompt tuning method achieves competitive or superior performance to other finetuning protocols across data scales, while satisfying parameter efficiency.  Flow matching yields more stable training and faster inference, while maintaining comparable generalization performance to diffusion policy. Our framework seamlessly unifies parameter-efficient affordance learning and robot action generation with flow matching.
 						
-					
-<hr style="margin-top: 0em;">
-<h3>Network Architecture</h3>
-<div class="box alt" style="margin-top: 1.5em; margin-bottom: 2.5em;">
-    <span class="image fit" style="display: flex; justify-content: center; align-items: center;">
-        <img src="images/wm.png" style="max-width: 100%; height: auto;" alt="Network Architecture Diagram" />
-    </span>
-</div>
-
-						<hr style="margin-top: 0em;">
+									<hr style="margin-top: 0em;">
 						<h3>Highlights</h3>
 						<div class="box alt" style="margin-bottom: 1em;">
 							<div class="row 50% uniform" style="width: 100%;">
@@ -196,6 +190,18 @@
 						<br>
 						Code is here <a href="https://github.com/HRI-EU/flow_matching">https://github.com/HRI-EU/flow_matching</a><br>
 						</p>
+						
+						<hr style="margin-top: 0em;">
+<h3>Flow Matching Architecture</h3>
+<div class="box alt" style="margin-top: 1.5em; margin-bottom: 2.5em;">
+    <span class="image fit" style="display: flex; justify-content: center; align-items: center;">
+        <video style="max-width: 100%; height: auto;" autoplay loop muted playsinline>
+            <source src="videos/wm.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </span>
+</div>
+		
 						
 						
 						<hr style="margin-top: 0em;">
