@@ -3,7 +3,7 @@
 	<head>
 		<title>Robot Manipulation with Flow Matching</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=1000">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="icon" type="image/x-icon" href="images/favicon.ico">
 
@@ -23,15 +23,41 @@
 		<meta property="og:type" content="website" />
 		<meta property="og:title" content="Flow Generative Models for Robot Manipulation" />
 		<meta property="og:description" content="To achieve robust general manipulation, we tackle the following key challenges: first, we perform parameter-efficient affordance grounding by prompt-tuning frozen foundation models to capture spatial and semantic scene cues; second, we execute visuomotor action generation via flow matching, transforming random waypoints into target trajectories with fast inference and stable training; and third, we integrate a multimodal predictive world model using generative latent flow matching to anticipate future sensory states—such as temporal audio and visual dynamics—enabling long-horizon reasoning and resolving physical ambiguities during complex tasks." />
+
+		<style>
+			*, *:before, *:after {
+				box-sizing: border-box;
+			}
+			video, img {
+				max-width: 100%;
+				height: auto;
+			}
+			.row {
+				display: flex;
+				flex-wrap: wrap;
+			}
+			@media screen and (max-width: 768px) {
+				.row > div,
+				.row > .2u {
+					width: 100% !important;
+					margin-bottom: 1.5em;
+				}
+				#main {
+					padding-top: 2em !important;
+					padding-left: 1em !important;
+					padding-right: 1em !important;
+				}
+			}
+		</style>
 	</head>
 	<body id="top">
 
 		<!-- Main -->
-		<div id="main" style="padding-bottom:1em; padding-top: 5em; width: 60em; max-width: 70em; margin-left: auto; margin-right: auto;">
+		<div id="main" style="padding: 3em 1.5em 1em 1.5em; width: 100%; max-width: 60em; margin-left: auto; margin-right: auto;">
 			<section id="four">
-				<h2 style="text-align: center; white-space: nowrap; color: #4e79a7; font-size: 200%">Flow Generative Models for Robot Manipulation</h2>
+				<h2 style="text-align: center; color: #4e79a7; font-size: clamp(1.6rem, 4vw, 2.25rem); line-height: 1.25; margin-bottom: 0.5em;">Flow Generative Models for Robot Manipulation</h2>
 						
-				<div style="text-align: center; font-size: 1.25em; margin-top: -0.5em; margin-bottom: 1.5em;">
+				<div style="text-align: center; font-size: 1.25em; margin-top: 0.5em; margin-bottom: 1.5em;">
 					<a href="https://fan6zh.github.io/" target="_blank" rel="noopener noreferrer" style="color: #4e79a7; text-decoration: none; font-weight: 500;">Fan Zhang</a>,&nbsp;&nbsp;
 					<a href="https://www.honda-ri.de/" target="_blank" rel="noopener noreferrer" style="color: #4e79a7; text-decoration: none; font-weight: 500;">Michael Gienger</a>
 					<div style="font-size: 0.85em; color: #666; margin-top: 0.3em;">
@@ -39,39 +65,39 @@
 					</div>
 				</div>
 
-				<span class="figure" style="margin-top: 0.5em; margin-bottom: 0;">
+				<span class="figure" style="margin-top: 0.5em; margin-bottom: 0; display: block;">
 					<video style="width: 100%; margin-top: 0.5em;" autoplay loop muted playsinline>
 						<source src="videos/overall.mp4" type="video/mp4">
 						Your browser does not support the video tag.
 					</video>
 				</span>
 						
-				<p class="paper-paragraph" style="text-align: justify;">
+				<p class="paper-paragraph" style="text-align: justify; margin-top: 1.5em;">
 					To achieve robust general manipulation, we tackle the following key challenges: first, we perform parameter-efficient affordance grounding by prompt-tuning frozen foundation models to capture spatial and semantic scene cues; second, we execute visuomotor action generation via flow matching, transforming random waypoints into target trajectories with fast inference and stable training; and third, we integrate a multimodal predictive world model using generative latent flow matching to anticipate future sensory states—such as temporal audio and visual dynamics—enabling long-horizon reasoning and resolving physical ambiguities during complex tasks.
 				</p>
 						
-				<hr style="margin-top: 0em;">
+				<hr style="margin-top: 1.5em;">
 									
 				<h3>Highlights</h3>
 				<div class="box alt" style="margin-bottom: 1em;">
 					<div class="row 50% uniform" style="width: 100%;">
 						<div class="2u" style="font-size: 0.9em; line-height: 1.5em; text-align: justify; width: 59.5%">
-							<span class="image fit" style="margin-bottom: 1.5em;">
-								<video autoplay loop muted playsinline style="width: 100%; margin-right: 5%;"><source src="videos/flow.mp4" type="video/mp4"></video>
+							<span class="image fit" style="margin-bottom: 1.5em; display: block;">
+								<video autoplay loop muted playsinline style="width: 100%;"><source src="videos/flow.mp4" type="video/mp4"></video>
 							</span>
 							Flow matching represents a robot visuomotor policy as a conditional process of flowing random waypoints to desired robot actions.
 						</div>
 						<div class="2u" style="font-size: 0.9em; line-height: 1.5em; text-align: justify; width: 40.5%">
-							<span class="image fit" style="margin-bottom: 1.5em;">
-								<video autoplay loop muted playsinline style="width: 100%; margin-right: 5%;"><source src="videos/pt.mp4" type="video/mp4"></video>
+							<span class="image fit" style="margin-bottom: 1.5em; display: block;">
+								<video autoplay loop muted playsinline style="width: 100%;"><source src="videos/pt.mp4" type="video/mp4"></video>
 							</span>
 							Prompt tuning for vision-language-model to predict manipulation affordances in multi-task scenarios.
 						</div>
 					</div>
 					<div class="row 50% uniform" style="width: 100%;">
 						<div class="2u" style="font-size: 0.9em; line-height: 1.5em; text-align: justify; width: 59.5%">
-							<span class="image fit" style="margin-bottom: 0.5em;">
-								<video autoplay loop muted playsinline style="width: 100%; margin-right: 5%;"><source src="videos/diffusion.mp4" type="video/mp4"></video>
+							<span class="image fit" style="margin-bottom: 0.5em; display: block;">
+								<video autoplay loop muted playsinline style="width: 100%;"><source src="videos/diffusion.mp4" type="video/mp4"></video>
 							</span>
 							Flow matching exhibits more stable training and evaluation, and noticeably faster inference than diffusion policy.
 						</div>
@@ -86,7 +112,7 @@
 					</div>
 				</div>
 						
-				<hr style="margin-top: 0em;">
+				<hr style="margin-top: 1.5em;">
 				<h3>Affordance-based VLA with Flow Matching</h3>
 
 				<p>
@@ -95,80 +121,80 @@
 				<div class="box alt" style="margin-bottom: 1em;">
 					<div class="row 50% uniform" style="width: 100%;">
 						<div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 25%">
-							<span class="image fit" style="margin-bottom: 0em;">
-								<video autoplay loop muted playsinline style="width: 100%; margin-right: 5%;"><source src="videos/comb.mp4" type="video/mp4"></video>
+							<span class="image fit" style="margin-bottom: 0.5em; display: block;">
+								<video autoplay loop muted playsinline style="width: 100%;"><source src="videos/comb.mp4" type="video/mp4"></video>
 							</span>
 							Comb the hair
 						</div>
 						<div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 25%">
-							<span class="image fit" style="margin-bottom: 0em;">
-								<video autoplay loop muted playsinline style="width: 100%; margin-right: 5%;"><source src="videos/trash.mp4" type="video/mp4"></video>
+							<span class="image fit" style="margin-bottom: 0.5em; display: block;">
+								<video autoplay loop muted playsinline style="width: 100%;"><source src="videos/trash.mp4" type="video/mp4"></video>
 							</span>
 							Sweep the trash
 						</div>
 						<div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 25%">
-							<span class="image fit" style="margin-bottom: 0em;">
-								<video autoplay loop muted playsinline style="width: 100%; margin-right: 5%;"><source src="videos/hang.mp4" type="video/mp4"></video>
+							<span class="image fit" style="margin-bottom: 0.5em; display: block;">
+								<video autoplay loop muted playsinline style="width: 100%;"><source src="videos/hang.mp4" type="video/mp4"></video>
 							</span>
 							Hang the towel
 						</div>
 						<div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 25%">
-							<span class="image fit" style="margin-bottom: 0em;">
-								<video autoplay loop muted playsinline style="width: 100%; margin-right: 5%;"><source src="videos/bottle.mp4" type="video/mp4"></video>
+							<span class="image fit" style="margin-bottom: 0.5em; display: block;">
+								<video autoplay loop muted playsinline style="width: 100%;"><source src="videos/bottle.mp4" type="video/mp4"></video>
 							</span>
 							Pass the water
 						</div>
 					</div>
 				</div>
 						
-				<hr style="margin-top: 0em;">
+				<hr style="margin-top: 1.5em;">
 				<h3>End-to-End Manipulation with Flow Matching</h3>
 
 				<div class="box alt" style="margin-bottom: 1em;">
 					<div class="row 50% uniform" style="width: 100%;">
 						<div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 26.5%; vertical-align: top;">
-							<span class="image fit" style="margin-bottom: 0em;">
-								<video autoplay loop muted playsinline style="width: 100%; margin-right: 5%;"><source src="videos/box.mp4" type="video/mp4"></video>
+							<span class="image fit" style="margin-bottom: 0.5em; display: block;">
+								<video autoplay loop muted playsinline style="width: 100%;"><source src="videos/box.mp4" type="video/mp4"></video>
 							</span>					
 						</div>
 						<div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 33.5%; vertical-align: top;">
-							<span class="image fit" style="margin-bottom: 0em;">
-								<video autoplay loop muted playsinline style="width: 100%; margin-right: 5%;"><source src="videos/toy.mp4" type="video/mp4"></video>
+							<span class="image fit" style="margin-bottom: 0.5em; display: block;">
+								<video autoplay loop muted playsinline style="width: 100%;"><source src="videos/toy.mp4" type="video/mp4"></video>
 							</span>																
 						</div>
 						<div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 20%; vertical-align: top;">
-							<span class="image fit" style="margin-bottom: 0em;">
-								<video autoplay loop muted playsinline style="width: 100%; margin-right: 5%;"><source src="videos/k1.m4v" type="video/mp4"></video>
+							<span class="image fit" style="margin-bottom: 0.5em; display: block;">
+								<video autoplay loop muted playsinline style="width: 100%;"><source src="videos/k1.m4v" type="video/mp4"></video>
 							</span>						
 						</div>
 						<div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 20%">
-							<span class="image fit" style="margin-bottom: 0em;">
-								<video autoplay loop muted playsinline style="width: 100%; margin-right: 5%;"><source src="videos/robomimic.mp4" type="video/mp4"></video>
+							<span class="image fit" style="margin-bottom: 0.5em; display: block;">
+								<video autoplay loop muted playsinline style="width: 100%;"><source src="videos/robomimic.mp4" type="video/mp4"></video>
 							</span>	
 						</div>
 					</div>
 				</div>
 								
-				<hr style="margin-top: 0em;">
+				<hr style="margin-top: 1.5em;">
 				<h3>Multimodal World Action Model with Flow Matching</h3>
 
 				<div class="box alt" style="margin-bottom: 1em;">
 					<div class="row 50% uniform" style="width: 100%;">
 						<div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: justify; width: 52.3%; vertical-align: top;">
-							<span class="image fit" style="margin-bottom: 0em;">
-								<video style="max-width: 100%; height: auto;" autoplay loop muted playsinline>
+							<span class="image fit" style="margin-bottom: 0.5em; display: block;">
+								<video style="width: 100%; height: auto;" autoplay loop muted playsinline>
 									<source src="videos/wm.mp4" type="video/mp4">
 									Your browser does not support the video tag.
 								</video>
 							</span>			
 						</div>
 						<div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: justify; width: 30%; vertical-align: top;">
-							<span class="image fit" style="margin-bottom: 0em;">
-								<video autoplay loop muted playsinline style="width: 100%; margin-right: 5%;"><source src="videos/awm.mp4" type="video/mp4"></video>
+							<span class="image fit" style="margin-bottom: 0.5em; display: block;">
+								<video autoplay loop muted playsinline style="width: 100%;"><source src="videos/awm.mp4" type="video/mp4"></video>
 							</span>						
 						</div>
 						<div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: justify; width: 16.7%; vertical-align: top;">
-							<span class="image fit" style="margin-bottom: 0em; display: block;">
+							<span class="image fit" style="margin-bottom: 0.5em; display: block;">
 								<video autoplay loop muted playsinline style="width: 100%; aspect-ratio: 16 / 16; object-fit: cover; object-position: center center; display: block;">
 									<source src="videos/piano.mp4" type="video/mp4">
 								</video>
@@ -177,7 +203,7 @@
 					</div>
 				</div>
 
-				<hr style="margin-top: 0em;">
+				<hr style="margin-top: 1.5em;">
 				<h3><a id="paper">Paper</a></h3>
 				<p>
 					<a href="https://arxiv.org/abs/2409.01083" target="_blank" rel="noopener noreferrer">Frontiers in Robotics and AI - Robot Learning and Evolution, 2026</a>.<br>
@@ -192,26 +218,26 @@
 					Code is here: <a href="https://github.com/HRI-EU/flow_matching" target="_blank" rel="noopener noreferrer">https://github.com/HRI-EU/flow_matching</a>
 				</p>
 						
-				<hr style="margin-top: 0em;">
+				<hr style="margin-top: 1.5em;">
 				<h3>Supervised Works</h3>
 						
 				<div class="box alt" style="margin-bottom: 1em;">
 					<div class="row 50% uniform" style="width: 100%;">
 						<div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: justify; width: 50%; vertical-align: top;">
-							<span class="image fit" style="margin-bottom: 0em;">
-								<video style="max-width: 100%; height: auto;" autoplay loop muted playsinline>
+							<span class="image fit" style="margin-bottom: 0.5em; display: block;">
+								<video style="width: 100%; height: auto;" autoplay loop muted playsinline>
 									<source src="videos/amir.mp4" type="video/mp4">
 									Your browser does not support the video tag.
 								</video>
 							</span>			
 						</div>
 						<div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: justify; width: 25%; vertical-align: top;">
-							<span class="image fit" style="margin-bottom: 0em;">
-								<video autoplay loop muted playsinline style="width: 100%; margin-right: 5%;"><source src="videos/cw.mp4" type="video/mp4"></video>
+							<span class="image fit" style="margin-bottom: 0.5em; display: block;">
+								<video autoplay loop muted playsinline style="width: 100%;"><source src="videos/cw.mp4" type="video/mp4"></video>
 							</span>						
 						</div>
 						<div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: justify; width: 25%; vertical-align: top;">
-							<span class="image fit" style="margin-bottom: 0em; display: block;">
+							<span class="image fit" style="margin-bottom: 0.5em; display: block;">
 								<video autoplay loop muted playsinline style="width: 100%; aspect-ratio: 16 / 16; object-fit: cover; object-position: center center; display: block;">
 									<source src="videos/rlc.mp4" type="video/mp4">
 								</video>
@@ -240,22 +266,22 @@
 					Chao Wang, Michael Gienger, Fan Zhang
 				</p>
 						
-				<hr style="margin-top: 0em;">
+				<hr style="margin-top: 1.5em;">
 				<h3>Team</h3>
 				<section>
 					<div class="box alt" style="margin-bottom: 0em;">
-						<div class="row 50% uniform" style="width: 100%;">
-							<div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 16%">
+						<div class="row 50% uniform" style="width: 100%; display: flex; justify-content: flex-start; gap: 2em;">
+							<div style="font-size: 1em; line-height: 1.5em; text-align: center; width: 120px;">
 								<a href="https://fan6zh.github.io/">
-									<span class="image fit" style="margin-bottom: 0.5em;">
-										<img src="images/fan.jpg" alt="" style="border-radius: 50%;" />
+									<span class="image fit" style="margin-bottom: 0.5em; display: block;">
+										<img src="images/fan.jpg" alt="Fan Zhang" style="border-radius: 50%; width: 100%; height: auto;" />
 									</span>Fan Zhang
 								</a>
 							</div>
-							<div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 16%">
+							<div style="font-size: 1em; line-height: 1.5em; text-align: center; width: 120px;">
 								<a href="https://www.honda-ri.de/">
-									<span class="image fit" style="margin-bottom: 0.5em;">
-										<img src="images/michael.png" alt="" style="border-radius: 50%;" />
+									<span class="image fit" style="margin-bottom: 0.5em; display: block;">
+										<img src="images/michael.png" alt="Michael Gienger" style="border-radius: 50%; width: 100%; height: auto;" />
 									</span>Michael Gienger
 								</a>
 							</div>
